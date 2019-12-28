@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context=".SentMarketArea">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:weightSum="90"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:text="Where Do You Want It To Be Sent?"
+            android:textColor="#ffff"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            android:padding="26dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="6"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#fff"
+        android:layout_marginBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/SentMapIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mapicon"
+            android:padding="16dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="5dp"/>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:background="#e6ffffff"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            >
+            <fragment
+                android:id="@+id/Sendmarket"
+                android:layout_width="match_parent"
+                android:background="#e6ffffff"
+                android:layout_height="40dp"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment" />
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="30"
+            android:padding="12dp"
+            android:layout_marginTop="15dp">
+            <ImageButton
+                android:id="@+id/SentBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:background="@drawable/back"
+                android:layout_marginLeft="7dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hint: You May Use Map Icom \n\t\t\t\tTo Pin The location"
+                android:textSize="12dp"
+                android:layout_marginLeft="18dp"/>
+
+            <ImageButton
+                android:id="@+id/SentNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/next"
+                android:padding="20dp"
+                android:layout_marginLeft="28dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>/
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+</LinearLayout>

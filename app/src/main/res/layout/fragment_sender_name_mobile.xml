@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context=".SenderNameMobileFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:weightSum="90"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:text="Who Will Send This Parcel?"
+            android:textColor="#ffff"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:padding="26dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="6"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#ffff"
+        android:layout_marginBottom="15dp">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <EditText
+                android:id="@+id/SenderName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="30"
+                android:inputType="text"
+                android:hint="Sender Name"
+                android:padding="14dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <EditText
+                android:id="@+id/SenderMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="30"
+                android:inputType="text"
+                android:hint="Sender Mobile No"
+                android:padding="14dp"/>
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="30"
+            android:layout_marginTop="7dp">
+            <ImageButton
+                android:id="@+id/SenderBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:background="@drawable/back"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:id="@+id/SenderNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/next"
+                android:padding="20dp"
+                android:layout_marginLeft="220dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

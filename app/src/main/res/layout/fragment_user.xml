@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context=".UserFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="5"
+        android:weightSum="90"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="180dp"
+            android:text="How Can We Help You Today, Obaid"
+            android:textColor="#ffff"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:padding="26dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="5"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <Button
+            android:id="@+id/ButtonShop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/shop"
+            android:text="SHOP
+Buy And Deliever!"
+            android:padding="18dp"
+            android:textStyle="bold"
+            android:textSize="20dp">
+
+        </Button>
+
+
+        <Button
+            android:id="@+id/ButtonSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/send"
+            android:text="SEND
+Send A Parcel!"
+            android:padding="16dp"
+
+            android:textStyle="bold"
+            android:textSize="20dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/ButtonGet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/get"
+            android:text="GET
+Bring A Parcel!"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:textSize="20dp">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

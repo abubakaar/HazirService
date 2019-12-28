@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context=".WhoSenderParcelFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="6"
+        android:weightSum="90"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:text="Who Will Send This Parcel?"
+            android:textColor="#ffff"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:padding="22dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#ffff"
+        android:layout_marginBottom="15dp">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <EditText
+                android:id="@+id/BuySenderName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="30"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Sender Name"
+                android:padding="14dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <EditText
+                android:id="@+id/BuySenderMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="30"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Sender Mobile No"
+                android:padding="14dp"/>
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:padding="14dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Who Will Pay?"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:id="@+id/RadioGroup">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:id="@+id/radioButton"
+                    android:checked="false"
+                    android:textSize="25dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:id="@+id/radioButton2"
+                    android:checked="false"
+                    android:textSize="25dp" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="30"
+            android:layout_marginTop="7dp">
+            <ImageButton
+                android:id="@+id/BuySenderBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:background="@drawable/back"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:id="@+id/BuySenderNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/next"
+                android:padding="20dp"
+                android:layout_marginLeft="220dp" />
+
+
+        </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

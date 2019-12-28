@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServiceManFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/SMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+        <Switch
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:textColor="#ffff"
+            android:gravity="center"
+            android:id="@+id/Switch_Avail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="7"
+            android:text="Availability"
+            android:padding="8dp"
+            android:background="@android:color/transparent"/>
+        <Button
+            android:id="@+id/ServiceConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:text="Confirm"
+            android:layout_marginTop="350dp"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</FrameLayout>
